@@ -20,7 +20,7 @@ def create_image(width: IMG_WIDTH, height: IMG_HEIGHT, iterations: ITERATIONS, c
     image = Image.new("RGB", (width, height))
     for x in range(0, width):
         for y in range(0, height):
-            coordinates = rasterize(x, y, height)
+            coordinates = rasterize(x, height - y, height)
             divergence = divergence_index(constant=coordinates, iterations=iterations)
             image.putpixel((x, y), color(divergence))
     return image
