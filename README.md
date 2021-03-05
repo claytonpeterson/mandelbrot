@@ -122,7 +122,7 @@ m.save_image(
 #### Output
 ![alt text](docs/example1.png)
 
-###Banded Black and White
+### Banded Black and White
 
 ```python
 import mandelbrot as m
@@ -139,5 +139,5 @@ m.save_image(
 #### Output
 ![alt text](docs/example2.png)
 
-#License
+# License
 This project is licensed under the MIT License - see the LICENSE.md file for details
