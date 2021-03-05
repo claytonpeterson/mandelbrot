@@ -1,8 +1,9 @@
-#Mandelbrot
+# Mandelbrot
 Mandlebrot is a simple program designed to visualize the [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set)  
 ![Alt text](docs/test.png?raw=true "Title")
 
-#Example Program
+# Example Program
+
 ```python
 import mandelbrot as m
 
@@ -16,7 +17,7 @@ m.save_image(
         color=m.color_options.basic), file_name='test', file_type='.png')
 ```
 
-#Installation
+# Installation
 Create a virtual environment in the root directory of the project:
 ```
 python -m venv venv
@@ -31,12 +32,12 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-##Libraries
+## Libraries
 **Pillow** - An image creation library  
 **numba** - A JIT compiler  
 
-#Functions
-###Create Image
+# Functions
+### Create Image
 ```python
 def create_image(width: IMG_WIDTH, height: IMG_HEIGHT, iterations: ITERATIONS, color) -> Image:
 ```
@@ -60,7 +61,7 @@ image = m.create_image(
     color=m.color_options.basic)
 ```
 
-###Save Image
+### Save Image
 ```python
 def save_image(image: Image, directory=DEFAULT_IMAGE_DIRECTORY, file_name=DEFAULT_FILE_NAME, file_type=DEFAULT_FILE_TYPE):
 ```
@@ -86,7 +87,7 @@ image = m.create_image(
 m.save_image(image=image, file_name='test', file_type='.png')
 ```
 
-###Set View
+### Set View
 ```python
 def set_view(center_x, center_y, zoom):
 ```
@@ -104,8 +105,8 @@ import mandelbrot as m
 m.set_view(center_x=-1.5, center_y=0, zoom=0.5)
 ```
 
-#Color Options
-###Basic Black and White
+# Color Options
+### Basic Black and White
 ```python
 import mandelbrot as m
 
@@ -118,7 +119,7 @@ m.save_image(
         iterations=512,
         color=m.color_options.basic), file_name='test', file_type='.png')
 ```
-####Output
+#### Output
 ![alt text](docs/example1.png)
 
 ###Banded Black and White
@@ -135,7 +136,7 @@ m.save_image(
         iterations=512,
         color=m.color_options.banded), file_name='test', file_type='.png')
 ```
-####Output
+#### Output
 ![alt text](docs/example2.png)
 
 #License
