@@ -1,0 +1,18 @@
+import pathlib
+
+# Center
+DEFAULT_CENTER_X = -1.48316
+DEFAULT_CENTER_Y = 0
+DEFAULT_ZOOM = 0.0001
+
+# Rendering
+ITERATIONS = 3000
+IMG_WIDTH = 1024
+IMG_HEIGHT = 1024
+
+# Saving
+ROOT_DIRECTORY = str(pathlib.Path().absolute())
+APP_DIRECTORY = ROOT_DIRECTORY + '/mandelbrot'
+DEFAULT_IMAGE_DIRECTORY = ROOT_DIRECTORY + "/output"
+DEFAULT_FILE_NAME = "test"
+DEFAULT_FILE_TYPE = '.png'
